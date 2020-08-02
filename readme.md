@@ -11,3 +11,11 @@ Management is looking to improve the number of sales, and they are looking at wh
 ## Realized by:
 - RIDOUANI Ayoub
 - MAAZOU Mohammed
+
+## Preview:
+![islamic_bank](https://raw.githubusercontent.com/ayoubridouani/olist_business_intelligence_project/master/Mod%C3%A8le%20Dimensionnel.jpeg "islamic_bank")
+
+
+to contact me: ridouaniayoub@gmail.com
+
+good luck
