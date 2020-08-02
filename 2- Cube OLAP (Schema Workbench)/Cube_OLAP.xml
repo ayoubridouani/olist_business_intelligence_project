@@ -1,0 +1,88 @@
+<Schema name="New Schema1">
+  <Cube name="cube_olist" visible="true" cache="true" enabled="true">
+    <Table name="dw_vente">
+    </Table>
+    <Dimension type="StandardDimension" visible="true" foreignKey="id_client" highCardinality="false" name="client">
+      <Hierarchy name="Client" visible="true" hasAll="true" primaryKey="id">
+        <Table name="dw_client">
+        </Table>
+        <Level name="id_client" visible="true" table="dw_client" column="id" nameColumn="id" type="Numeric" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="nomPrenom" visible="true" table="dw_client" column="name" nameColumn="name" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="age" visible="true" table="dw_client" column="age" nameColumn="age" type="Numeric" uniqueMembers="false" levelType="Regular" hideMemberIf="Never" description="age du client">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="id_product" highCardinality="false" name="Produit">
+      <Hierarchy name="Produit" visible="true" hasAll="true" primaryKey="produit_id">
+        <Table name="dw_produit">
+        </Table>
+        <Level name="id_produit" visible="true" table="dw_produit" column="produit_id" nameColumn="produit_id" type="Numeric" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="cat&#233;gorie" visible="true" table="dw_produit" column="produit_category_name" nameColumn="produit_category_name" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never" description="cat&#233;gorie d&#39;un produit">
+        </Level>
+        <Level name="prix" visible="true" table="dw_produit" column="prix" nameColumn="prix" type="Numeric" uniqueMembers="false" levelType="Regular" hideMemberIf="Never" description="prix d&#39;un produit">
+        </Level>
+        <Level name="weight_g" visible="true" table="dw_produit" column="produit_weight_g" nameColumn="produit_weight_g" type="Numeric" uniqueMembers="false" levelType="Regular" hideMemberIf="Never" description="poids d&#39;un produit">
+        </Level>
+        <Level name="length_cm" visible="true" table="dw_produit" column="produit_length_cm" nameColumn="produit_length_cm" type="Numeric" uniqueMembers="false" levelType="Regular" hideMemberIf="Never" description="longeur  d&#39;un produit en cm">
+        </Level>
+        <Level name="height_cm" visible="true" table="dw_produit" column="produit_height_cm" nameColumn="produit_height_cm" type="Numeric" uniqueMembers="false" levelType="Regular" hideMemberIf="Never" description="hauteur d&#39;un produit en cm">
+        </Level>
+        <Level name="width_cm" visible="true" table="dw_produit" column="produit_width_cm" nameColumn="produit_width_cm" type="Numeric" uniqueMembers="false" levelType="Regular" hideMemberIf="Never" description="largeur d&#39;un produit en cm">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="id_lieu" highCardinality="false" name="Lieu">
+      <Hierarchy name="Lieu" visible="true" hasAll="true" primaryKey="id_lieu">
+        <Table name="dw_lieu">
+        </Table>
+        <Level name="id_lieu" visible="true" table="dw_lieu" column="id_lieu" nameColumn="id_lieu" type="Numeric" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="ville" visible="true" table="dw_lieu" column="ville" nameColumn="ville" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="r&#233;gion" visible="true" table="dw_lieu" column="region" nameColumn="region" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="pays" visible="true" table="dw_lieu" column="pays" nameColumn="pays" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="id_employe" highCardinality="false" name="Employee">
+      <Hierarchy name="Employee" visible="true" hasAll="true" primaryKey="id_employe">
+        <Table name="dw_employee">
+        </Table>
+        <Level name="id_employee" visible="true" table="dw_employee" column="id_employe" nameColumn="id_employe" type="Numeric" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="ville" visible="true" table="dw_employee" column="ville" nameColumn="ville" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="r&#233;gion" visible="true" table="dw_employee" column="region" nameColumn="region" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="d&#233;signation de poste" visible="true" table="dw_employee" column="Designation_de_poste" nameColumn="Designation_de_poste" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Nombre de vente" visible="true" table="dw_employee" column="nb_vente" nameColumn="nb_vente" type="Numeric" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="client &#233;xp&#232;rience" visible="true" table="dw_employee" column="client_experience" nameColumn="client_experience" type="Numeric" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="TimeDimension" visible="true" foreignKey="id_date" highCardinality="false" name="Date">
+      <Hierarchy name="Date" visible="true" hasAll="true" primaryKey="id_date">
+        <Table name="dw_date">
+        </Table>
+        <Level name="mois" visible="true" table="dw_date" column="mois" nameColumn="mois" type="Numeric" uniqueMembers="false" levelType="TimeMonths" hideMemberIf="Never">
+        </Level>
+        <Level name="trimestre" visible="true" table="dw_date" column="trimestre" nameColumn="trimestre" type="Numeric" uniqueMembers="false" levelType="TimeQuarters" hideMemberIf="Never">
+        </Level>
+        <Level name="annee" visible="true" table="dw_date" column="annee" nameColumn="annee" type="Numeric" uniqueMembers="false" levelType="TimeYears" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="moyenne chiffre d&#39;affaire" column="CA" datatype="Numeric" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="chiffre d&#39;affaire" column="CA" datatype="Numeric" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="nombre de ventes" column="id_product" datatype="Numeric" aggregator="count" visible="true">
+    </Measure>
+  </Cube>
+</Schema>

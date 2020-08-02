@@ -1,0 +1,10 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_2=>" expression="TalendDate.getPartOfDate(&quot;YEAR&quot;,TalendDate.parseDate(&quot;dd/MM/yyyy HH:mm:ss&quot;,row2.date_service))">
+  <variables name="row2.id_service" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row2.id_product" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row2.id_client" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row2.id_employe" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row2.quantite" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row2.avis" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row2.date_service" value="null" talendType="id_String" nullable="true"/>
+</expression:EMFExpression>
