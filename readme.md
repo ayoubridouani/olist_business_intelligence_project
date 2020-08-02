@@ -1,5 +1,5 @@
 ## Introduction:
-Management is looking to improve the number of sales, and they are looking at whether female employees have an influence on sales volumes and if this varies by day of the week or certain times of the year. She would also like to know in which place the number of sales is high, She also wonders if certain products sell better on certain dates and / or in certain places
+Management is looking to improve the number of sales, and they are looking at whether female employees have an influence on sales volumes and if this varies by day of the week or certain times of the year. She would also like to know in which place the number of sales is high, She also wonders if certain products sell better on certain dates and/or in certain places.
 
 ## our work that we did:
 - creation of a data warehouse using talend BI.
@@ -12,8 +12,8 @@ Management is looking to improve the number of sales, and they are looking at wh
 - RIDOUANI Ayoub
 - MAAZOU Mohammed
 
-## Preview:
-![islamic_bank](https://raw.githubusercontent.com/ayoubridouani/olist_business_intelligence_project/master/Mod%C3%A8le%20Dimensionnel.jpeg "islamic_bank")
+## Dimensionnel Modele of this project:
+![islamic_bank](https://raw.githubusercontent.com/ayoubridouani/olist_business_intelligence_project/master/Mod%C3%A8le%20Dimensionnel.jpeg "Dimensionnel Modele of this project")
 
 
 to contact me: ridouaniayoub@gmail.com
