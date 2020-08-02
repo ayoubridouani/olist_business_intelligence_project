@@ -6,15 +6,15 @@ Management is looking to improve the number of sales, and they are looking at wh
 - creation of OLAP cube from the data warehouse.
 - Cube reporting with pivot4j on pentaho server.
 - Application of machine learning algorithms (Data Mining).
-- and a report for our entire project.
-
-## Realized by:
-- RIDOUANI Ayoub
-- MAAZOU Mohammed
+- and a report (frensh version) for our entire project.
 
 ## Dimensional model of this project:
 ![islamic_bank](https://raw.githubusercontent.com/ayoubridouani/olist_business_intelligence_project/master/Mod%C3%A8le%20Dimensionnel.jpeg "Dimensional model of this project")
 
+
+## Realized by:
+- RIDOUANI Ayoub
+- MAAZOU Mohammed
 
 to contact me: ridouaniayoub@gmail.com
 
