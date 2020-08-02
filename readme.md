@@ -12,8 +12,8 @@ Management is looking to improve the number of sales, and they are looking at wh
 - RIDOUANI Ayoub
 - MAAZOU Mohammed
 
-## Dimensionnel Modele of this project:
-![islamic_bank](https://raw.githubusercontent.com/ayoubridouani/olist_business_intelligence_project/master/Mod%C3%A8le%20Dimensionnel.jpeg "Dimensionnel Modele of this project")
+## Dimensional model of this project:
+![islamic_bank](https://raw.githubusercontent.com/ayoubridouani/olist_business_intelligence_project/master/Mod%C3%A8le%20Dimensionnel.jpeg "Dimensional model of this project")
 
 
 to contact me: ridouaniayoub@gmail.com
